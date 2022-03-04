@@ -1,0 +1,32 @@
+/* || General style rules */
+
+*, ::after, ::before {
+    box-sizing: border-box;
+}
+
+/* || Typography */
+
+html {
+    font-size: 10px;
+    color: black;
+}
+
+h1 {
+    font-size: 3.5em;
+}
+
+h2 {
+    font-size: 2.5em;
+}
+
+h3 {
+    font-size: 2em;
+}
+
+h4, h5, h6 {
+    font-size: 1.6em;
+}
+
+p, ul {
+    font-size: 1.6em;
+}

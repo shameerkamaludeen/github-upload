@@ -1,0 +1,225 @@
+/* || General style rules */
+@font-face {
+    font-family: 'Open Sans', sans-serif;
+    src: url(../fonts/OpenSans-Regular.ttf) format('ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Roboto', sans-serif;
+    src: url(../fonts/Roboto-Regular.ttf) format('ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Oswald', sans-serif;
+    src: url(../fonts/Oswald-Bold.ttf) format('ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'PT Sans', sans-serif;
+    src: url(../fonts/PTSans-Bold.ttf) format('ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* || Typography */
+
+html {
+    word-spacing: 0.8px;
+    letter-spacing: 0.4px;
+}
+
+h3, h4, h5, h6 {
+    font-family: 'Roboto', sans-serif;
+}
+
+p, a, li {
+    font-family: 'Open Sans', sans-serif;
+}
+
+/* || Layout */
+
+.section {
+    margin-top: 2em;
+    margin-bottom: 2em;
+}
+
+.section-content, .header-content, .footer-content {
+    width: 80%;
+    margin: 0 auto;
+}
+
+/* || Section hero */
+
+.section-hero {
+    background: border-box linear-gradient(0deg, rgba(0,0,0,0.05), rgba(0,0,0,0.05)), 
+    url(../images/curb-sugar-background.jpeg) no-repeat 20% top/cover;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.section-hero .section-content {
+    padding: 2em 0;
+}
+
+.section-hero .hero-content {
+    line-height: 1.5;
+}
+
+.section-hero h2 span:first-child {
+    font-family: 'Oswald', sans-serif;    
+    color: #bfa065;
+    font-size: 1.6em;
+}
+
+.section-hero h2 span:last-child {
+    font-family: 'PT Sans', sans-serif;
+    text-transform: uppercase;
+    color: #808080;
+}
+
+.hero-desc {
+    margin: 2em 6em 2em 0;
+    color: #808080;
+    max-width: 25em;
+}
+
+.hero-rm {
+    text-decoration: none;
+    padding: 0.2em 0.5em;
+    display: block;
+    border: 2px solid #bfa065;
+    border-radius: 40px;
+    cursor: pointer;
+    color: #808080;
+    font-size: 2.5em;
+    margin: 1.5em 0;
+    max-width: 7em;
+    text-align: center;
+}
+
+.section-hero .card-collection {
+    margin-top: 2em;
+}
+
+.section-hero .card-collection .card-wrapper  {
+    background: border-box white;
+    padding: 1.5em;
+    margin: 2em 0;
+}
+
+.section-hero .card-collection .card-wrapper h3 {
+    text-align: center;
+}
+
+.section-hero .card-collection .card-desc {
+    font-style: italic;
+    text-align: center;
+    color: #808080;
+    line-height: 1.5;
+}
+
+.section-hero .card-collection .card-image {
+    width: 6.4em;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.section-hero .card-collection .card-image img {
+    width: 100%;
+    height: 100%;
+}
+
+/* || Footer */
+
+footer {
+    background-color: #333333;
+    padding: 2em 0;
+    color: white;
+}
+
+.footer-content > p {
+    text-align: center;
+    font-size: 1.4em;
+    margin: 2em 0;
+}
+
+.footer-content > p > a {
+    color: #a68053;
+}
+
+.footer-content > p > a:hover {
+    color: #ebd8c1;
+}
+
+
+
+/* || Media query for ipads/tablets breakpoint (480px) */
+
+@media screen and (min-width: 30.0625em) {
+
+    /* || Typography */
+
+    .section-hero h2 span:first-child {
+        font-size: 2em;
+    }
+
+    .section-hero h2 span:last-child {
+        font-size: 1.2em;
+    }
+
+    .section-hero .card-collection .card-wrapper h3 {
+        font-size: 2.4em;
+    }
+
+    /* || Layout  */
+
+    .section-content, .header-content, .footer-content {
+        width: 85%;
+    }
+
+    /* || Section hero */
+
+    .section-hero .card-collection .card-wrapper {
+        padding-left: 5em;
+        padding-right: 5em;
+    }
+}
+
+/* || Media query for small screens/laptops breakpoint (768px) */
+
+@media screen and (min-width: 48.0625em) {
+    /* || Section hero */
+
+    .section-hero .card-collection {
+        display: flex;
+        flex-flow: row wrap;
+    }
+
+    .section-hero .card-collection .card-wrapper {
+        padding-left: 1.5em;
+        padding-right: 1.5em;
+        flex: 1;
+        margin-right: 2em;
+    }
+
+    .section-hero .card-collection .card-wrapper:last-child {
+    margin-right: initial;
+    }
+}
+
+/* || Media query for Desktops/large screens breakpoint (1024px) */
+
+@media screen and (min-width: 64.0625em) {
+
+    /* || Section hero*/
+    .section-hero {
+        background-position: left top;
+    }
+
+}
